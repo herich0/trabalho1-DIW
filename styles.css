@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  align-items: center;
+  
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  max-height:min-content;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Coluna da direita */
+.right-column {
+  flex: 1;
+}
+
+/* Card padrão */
+.card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: -1px 1px 0 rgba(0,0,0,.05),
+            3px 3px 0 rgba(0,0,0,.05),
+            5px 5px 0 rgba(0,0,0,.05),
+            7px 7px 0 rgba(0,0,0,.05),
+            9px 9px 0 rgba(0,0,0,.05),
+            11px 11px 0 rgba(0,0,0,.05),
+            13px 13px 0 rgba(0,0,0,.05); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.card .highlight {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.quote{
+  font-size: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Cores */
+.purple {
+  background-color: hsl(263, 55%, 52%);
+  flex: 2;
+}
+
+.blue {
+  background-color: hsl(217, 19%, 35%);
+  flex: 1;
+}
+
+.black {
+  background-color: hsl(219, 29%, 14%);
+  flex: 2;
+}
+
+.white {
+  background-color: white;
+  color: hsl(217, 19%, 35%);
+  flex: 1;
+}
+
+/* Card da Kira mais alto */
+.tall {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: calc(100%); /* Para igualar a soma das duas linhas */
+}
